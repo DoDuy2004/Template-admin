@@ -5118,6 +5118,9 @@ select.h40 {
   font-weight: 700;
   padding: 15px 0px;
 }
+.product-image-item:hover {
+  border: solid 1px rgb(3, 168, 168);
+}
 
 .toggle-button .active {
   background-color: rgb(3, 168, 168);
