@@ -21,9 +21,9 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="lib/slick/slick.css" rel="stylesheet">
-  <link href="lib/slick/slick-theme.css" rel="stylesheet">
   <link rel="stylesheet" href="css/All.css">
+
+
   <!-- Font -->
   <link rel="stylesheet" href="font/fonts.css">
 
@@ -99,11 +99,6 @@
                         <li class="sub-menu-item">
                           <a href="edit-product.html" class="">
                             <div class="text">Sửa sản phẩm</div>
-                          </a>
-                        </li>
-                        <li class="sub-menu-item">
-                          <a href="product-detail.html" class="">
-                            <div class="text">Chi tiết sản phẩm</div>
                           </a>
                         </li>
                       </ul>
@@ -209,6 +204,12 @@
                       <a href="setting.html" class="">
                         <div class="icon"><i class="icon-settings"></i></div>
                         <div class="text">Thông tin cửa hàng</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="info-website.html" class="">
+                        <div class="icon"><i class="icon-settings"></i></div>
+                        <div class="text">Thông tin website</div>
                       </a>
                     </li>
                     <li class="menu-item">
@@ -673,11 +674,11 @@
                 <!-- main-content-wrap -->
                 <div class="main-content-wrap">
                   <div class="flex items-center flex-wrap justify-between gap20 mb-27">
-                    <h3>Chi tiết sản phẩm</h3>
+                    <h3>Chi tiết yêu cầu</h3>
                     <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
                       <li>
                         <a href="index.html">
-                          <div class="text-tiny">Quản lý</div>
+                          <div class="text-tiny">Tổng quan</div>
                         </a>
                       </li>
                       <li>
@@ -685,320 +686,269 @@
                       </li>
                       <li>
                         <a href="#">
-                          <div class="text-tiny">Sản phẩm</div>
+                          <div class="text-tiny">Liên hệ</div>
                         </a>
                       </li>
                       <li>
                         <i class="icon-chevron-right"></i>
                       </li>
                       <li>
-                        <div class="text-tiny">Chi tiết sản phẩm</div>
+                        <div class="text-tiny">Chi tiết</div>
                       </li>
                     </ul>
                   </div>
-                  <!-- form-add-product -->
-                  <form class="w-100">
-                    <div class="wg-box">
-                      <div class="back-list">
-                        <a href=""><i class="fa-solid fa-circle-arrow-left"></i>Quay Lại Danh Sách</a>
-                      </div>
-                      <fieldset class="">
-                        <div class="detail-product-section">
+                  <!-- new-page-wrap -->
+                  <form class="form-new-page">
+                    <div class="new-page-wrap">
+                      <div class="left">
+                        <div class="wg-box">
+                          <div class="widget-tabs">
+                            <ul class="widget-menu-tab">
+                              <!-- <li class="item-title active">
+                              <span class="inner">
+                                <h6>Detail</h6>
+                              </span>
+                            </li> -->
+                              <!-- <li class="item-title">
+                              <span class="inner">
+                                <h6>Revision history</h6>
+                              </span>
+                            </li> -->
+                            </ul>
 
-                          <div class="box-detail mb-16 mt-3 col-md-5">
-                            <div class="item-image-avatar product-slider-single normal-slider mt-3">
-
-                              <img src="images/luffy.png" alt="Product Image">
-                              <img src="images/rua.jpg" alt="Product Image">
-                              <img src="images/mabu.jpg" alt="Product Image">
-                              <img src="images/ruaxanh.webp" alt="Product Image">
-                              <img src="images/thap.jpg" alt="Product Image">
-                            </div>
-                            <div>
-                              <div class="image-list-product product-slider-single-nav mt-3">
-                                <div class="box-image-item mt-2 slider-nav-img "><img src="images/luffy.png" alt="Product Image" class=" product-image-item "></div>
-                                <div class="box-image-item mt-2 slider-nav-img "><img src="images/rua.jpg" alt="Product Image" class=" product-image-item "></div>
-                                <div class="box-image-item mt-2 slider-nav-img "><img src="images/mabu.jpg" alt="Product Image" class=" product-image-item "></div>
-                                <div class="box-image-item mt-2 slider-nav-img "><img src="images/ruaxanh.webp" alt="Product Image" class=" product-image-item "></div>
-                                <div class="box-image-item mt-2 slider-nav-img "><img src="images/thap.jpg" alt="Product Image" class=" product-image-item "></div>
-                              </div>
-                              <div class="chevron-item">
-                                <span class="chevron-left"><i class=" fa-solid fa-chevron-left"></i></span>
-                                <span class="chevron-right"><i class=" fa-solid fa-chevron-right"></i></span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="box-info-product">
-                            <div class="info-product">
-                              <div class="product-name">
-                                <h4>Tên sản phẩm</h4>
-                              </div>
-                              <div class="product-code">
-                                <span>Mã sản phẩm: SP071224001</span>
-                              </div>
-                              <div class="product-category">
-                                <span>Loại sản phẩm: Mô hình nhựa</span>
-                              </div>
-                              <div class="product-price-detail">
-                                <span>Giá: <strong class="text-danger">300.00đ</strong></span>
-                                <span class="original-price">359.000đ</span>
-                              </div>
-                              <div class="product-stock">
-                                <span>Số lượng tồn kho: 9999</span>
-                              </div>
-                              <div class="product-supplier">
-                                <span>Nhà cung cấp: VECTO</span>
-                              </div>
-                              <div class="product-brand">
-                                <span>Thương hiệu: VECTO</span>
-                              </div>
-                              <div class="product-slug">
-                                <span>Slug: ten-san-pham-1</span>
-                              </div>
-                              <div class="bottom-info-product">
+                            <div class="widget-content-tab">
+                              <div class="widget-content-inner active">
+                                <!-- <div class="box-response">
                                 <div>
-                                  <div class="sales-count">
-                                    <span>Lượt bán: 20</span>
-                                  </div>
-                                  <div class="product-status">
-                                    <span>Trạng thái: <span class="status-active">hoạt động</span></span>
+                                  <div class="block-response">Chờ xử lý</div>
+                                </div>
+                              </div> -->
+                                <fieldset class="name mb-24">
+                                  <div class="body-title mb-10">Thông tin liên hệ: <span class="number"></span></div>
+                                  <textarea type="text" name="area"></textarea>
+                                  <!-- <input class="" type="text" placeholder="Name" name="text" tabindex="0" value="" aria-required="true" required=""> -->
+                                </fieldset>
+                                <fieldset class="text mb-24">
+                                  <div class="body-title mb-10">Bản đồ: <span class="number"></span></div>
+                                  <textarea type="text" name="area"></textarea>
+                                  <!-- <input class="" type="text" placeholder="https://themeforest.net/user/themesflat" name="text" tabindex="0" value="" aria-required="true" required=""> -->
+                                </fieldset>
+                                <fieldset class="description mb-24">
+                                  <div class="body-title mb-10">Giới thiệu: <span class="number"></span></div>
+                                  <textarea type="text" name="area"></textarea>
+                                  <!-- <textarea class="" name="description" placeholder="Description" tabindex="0" aria-required="true" required=""></textarea> -->
+                                </fieldset>
+                                <fieldset class="content" style="margin-bottom: 80px;">
+                                  <div class="body-title mb-10">Chính sách:</div>
+                                  <textarea type="text" name="area"></textarea>
+                                  <!-- <input type="text"> -->
+                                  <!-- <h4>Lorem ipsum dolor sit amet</h4> -->
+                                  <!-- <div class="body-text"></div> -->
+                                  <!-- <textarea type="text" name="area"> Đơn hàng 3 tháng chưa giao.</textarea> -->
+                                </fieldset>
+                                <div>
+                                  <div class="choose-logo w-50">
+                                    <span>Logo</span>
+                                    <input type="file" id="fileInput" class="file-input">
+                                    <label for="fileInput" class="choose-logo-button">Chọn tệp</label>
                                   </div>
                                 </div>
-                                <div class="view-item">
-                                  <div class="some-metric">
-                                    <span><i class="fa-solid fa-eye"></i>2345</span>
-                                  </div>
-                                  <div class="another-metric">
-                                    <span><i class="fa-solid fa-heart"></i>1121</span>
+                                <div class="box-update-info">
+                                  <div>
+                                    <div class="block-update">Cập nhật thông tin</div>
                                   </div>
                                 </div>
+                                <!-- <fieldset class="content">
+                                <div class="body-title mb-10">Phản hồi:</div> -->
+                                <!-- <input type="text"> -->
+                                <!-- <h4>Lorem ipsum dolor sit amet</h4> -->
+                                <!-- <div class="body-text"></div> -->
+                                <!-- <textarea type="text" name="area" ></textarea> -->
+
+                                <!-- </fieldset> -->
+                                <!-- <div class="box-response">
+                                <div>
+                                  <div class="block-response">Gửi phản hồi</div>
+                                </div>
+                              </div> -->
+                              </div>
+
+
+                              <!-- <div class="widget-content-inner">
+                              <div class="wg-table table-revision-history">
+                                <ul class="table-title flex gap20 mb-24">
+                                  <li>
+                                    <div class="body-title">Author</div>
+                                  </li>
+                                  <li>
+                                    <div class="body-title">Column</div>
+                                  </li>
+                                  <li>
+                                    <div class="body-title">Origin</div>
+                                  </li>
+                                  <li>
+                                    <div class="body-title">After changes</div>
+                                  </li>
+                                  <li>
+                                    <div class="body-title">Created at</div>
+                                  </li>
+                                </ul>
+                                <ul class="flex flex-column items-center justify-center">
+                                  <div class="image mb-10">
+                                    <img src="images/item-background/history.png" alt="">
+                                  </div>
+                                  <h6 class="mb-2">No record</h6>
+                                  <div class="body-text">This is the original and unedited article</div>
+                                </ul>
                               </div>
                             </div>
                           </div>
-
                         </div>
-
-                      </fieldset>
+                      </div>
+                      <div class="wg-box">
+                        <div class="flex gap10 items-center justify-between">
+                          <div class="body-title">Search engine optimize</div>
+                          <div class="dropdown default style-box">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <a href="javascript:void(0);" class="view-all w-max">
+                                <div class="body-text tf-color">Edit SEO meta</div>
+                                <i class="icon-chevron-down"></i>
+                              </a>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="#">Edit SEO meta</a>
+                              </li>
+                              <li>
+                                <a href="#">Edit SEO meta</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="">
+                          <h6 class="mb-10">Lorem ipsum dolor sit amet</h6>
+                          <div class="mb-2">
+                            <a class="body-text tf-color" href="https://themeforest.net/user/themesflat">https://themeforest.net/user/themesflat</a>
+                          </div>
+                          <div class="body-text">20 Nov 2023</div>
+                        </div>
+                        <fieldset class="text">
+                          <div class="body-title mb-10">SEO Title</div>
+                          <input class="" type="text" placeholder="SEO Title" text="text" tabindex="0" value="" aria-required="true" required="">
+                        </fieldset>
+                        <fieldset class="description">
+                          <div class="body-title mb-10">SEO description</div>
+                          <textarea class="" name="description" placeholder="SEO description" tabindex="0" aria-required="true" required=""></textarea>
+                        </fieldset>
+                        <button class="tf-button" type="submit">Done</button>
+                      </div>
                     </div>
-                  </form>
-                  <div class="menu-button col-lg-12">
-                    <ul class="nav nav-pills nav-justified col-lg-6">
-                      <li class="nav-item">
-                        <button class="toggle-button description-button active" data-toggle="pill" href="#description" onclick="openTab(event, 'description'); activateButton(this)">Mô tả</button>
-                      </li>
-                      <li class="nav-item">
-                        <button class="toggle-button rate-button" data-toggle="pill" href="#specification" onclick="openTab(event, 'specification'); activateButton(this)">Đánh giá(10)</button>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="wg-box tabcontent" id="description">
-                    <div class=" box-comment col-lg-12">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium similique deserunt tempore enim quo, veniam eius rem sapiente atque harum soluta earum voluptatibus,
-                        incidunt fuga ut modi quibusdam nobis velit optio consequuntur mollitia officiis eum! Tenetur a assumenda molestias repellendus. Illo libero mollitia quisquam ex rerum
-                        possimus quidem ipsa molestiae magnam iusto deleniti ab nobis facilis fuga maxime eligendi in cumque, minima esse. Exercitationem corporis dolore tempora harum fuga
-                        quas sed unde eaque dolor neque. Ex error ad repudiandae. Mollitia expedita id corrupti aut, perspiciatis dolorum magnam iste voluptates? Adipisci exercitationem cupiditate
-                        nulla eius harum illo atque culpa illum impedit aperiam quaerat numquam aliquid accusantium explicabo, officia repellat labore a optio nobis veniam ratione nesciunt doloribus
-                        cum mollitia? Odit saepe dolor nostrum quod debitis. Nulla fugiat ipsum perferendis ullam facilis aspernatur quasi numquam animi, cum libero, velit quia et praesentium. Nobis
-                        iure quasi ipsum quos veniam exercitationem mollitia perferendis maxime necessitatibus quisquam impedit explicabo culpa at recusandae facere incidunt delectus dolor porro sit,
-                        eum asperiores odit. Expedita, ea eum sed temporibus beatae non officiis consequatur ullam nihil aliquid nec
-                        essitatibus repellat inventore! Natus sequi quia nam, repellendus voluptatum ipsam et dolorem, tempore, qui quaerat quis debitis distinctio tenetur nihil beatae maxime.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="wg-box tabcontent" id="specification">
-                    <div class=" box-comment col-lg-12">
-                      <div class="comment-section">
-                        <div class="filter-newest-comments">
-                          <fieldset class="male">
-                            <div class="select">
-                              <select class="">
-                                <option>VECTO</option>
-                                <!-- <option>Female</option>
-                          <option>Other</option> -->
-                              </select>
-                            </div>
-                          </fieldset>
-                        </div>
-                        <div class="comment">
-                          <div class="comment-header">
-                            <span class="comment-author">Putin Capnuwng -</span>
-                            <span class="comment-date">2024-12-28</span>
-                            <span class="comment-delete">
-                              <button class="delete-btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                              </button>
-                            </span>
-                          </div>
-                          <div class="comment-body">
-                            <p class="comment-text">Sản phẩm rất tốt và đáng mua,mô hình này giá cả hợp lý mà còn đẹp nữa,mua về mình ưng quá chừng kk.</p>
-                            <div class="comment-rating">
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9734;</span> <!-- Ngôi sao rỗng -->
-                            </div>
+                    <div class="right">
+                      <div class="wg-box">
+                        <div>
+                          <div class="body-title mb-10">Publish</div>
+                          <div class="flex gap10">
+                            <button class="tf-button style-1 w-full" type="submit">View</button>
+                            <button class="tf-button w-full" type="submit">Publish</button>
                           </div>
                         </div>
                       </div>
-
-                      <div class="comment-section">
-                        <div class="comment">
-                          <div class="comment-header">
-                            <span class="comment-author">Putin Capnuwng -</span>
-                            <span class="comment-date">2024-12-28</span>
-                            <span class="comment-delete">
-                              <button class="delete-btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                              </button>
-                            </span>
-                          </div>
-                          <div class="comment-body">
-                            <p class="comment-text">Sản phẩm rất tốt và đáng mua,mô hình này giá cả hợp lý mà còn đẹp nữa,mua về mình ưng quá chừng kk.</p>
-                            <div class="comment-rating">
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9734;</span> <!-- Ngôi sao rỗng -->
-                            </div>
+                      <div class="wg-box">
+                        <div>
+                          <div class="body-title mb-10">Status</div>
+                          <div class="select">
+                            <select class="">
+                              <option>Published</option>
+                              <option>Wating</option>
+                              <option>Finish</option>
+                            </select>
                           </div>
                         </div>
                       </div>
-
-                      <div class="comment-section">
-                        <div class="comment">
-                          <div class="comment-header">
-                            <span class="comment-author">Putin Capnuwng -</span>
-                            <span class="comment-date">2024-12-28</span>
-                            <span class="comment-delete">
-                              <button class="delete-btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                              </button>
-                            </span>
-                          </div>
-                          <div class="comment-body">
-                            <p class="comment-text">Sản phẩm rất tốt và đáng mua,mô hình này giá cả hợp lý mà còn đẹp nữa,mua về mình ưng quá chừng kk.</p>
-                            <div class="comment-rating">
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9734;</span> <!-- Ngôi sao rỗng -->
-                            </div>
+                      <div class="wg-box">
+                        <div>
+                          <div class="body-title mb-10">Template</div>
+                          <div class="select">
+                            <select class="">
+                              <option>Default</option>
+                              <option>Wating</option>
+                              <option>Finish</option>
+                            </select>
                           </div>
                         </div>
                       </div>
-
-                      <div class="comment-section">
-                        <div class="comment">
-                          <div class="comment-header">
-                            <span class="comment-author">Putin Capnuwng -</span>
-                            <span class="comment-date">2024-12-28</span>
-                            <span class="comment-delete">
-                              <button class="delete-btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                              </button>
-                            </span>
-                          </div>
-                          <div class="comment-body">
-                            <p class="comment-text">Sản phẩm rất tốt và đáng mua,mô hình này giá cả hợp lý mà còn đẹp nữa,mua về mình ưng quá chừng kk.</p>
-                            <div class="comment-rating">
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9733;</span>
-                              <span class="star">&#9734;</span> <!-- Ngôi sao rỗng -->
+                      <div class="wg-box">
+                        <div>
+                          <div class="body-title mb-10">Gallery</div>
+                          <div class="upload-image style-1 mb-16">
+                            <div class="item">
+                              <img src="images/images-section/gallery-1.png" alt="">
+                            </div>
+                            <div class="item">
+                              <img src="images/images-section/gallery-2.png" alt="">
+                            </div>
+                            <div class="item">
+                              <img src="images/images-section/gallery-3.png" alt="">
+                            </div>
+                            <div class="item">
+                              <img src="images/images-section/gallery-4.png" alt="">
+                            </div>
+                            <div class="item up-load">
+                              <label class="uploadfile" for="myFile">
+                                <div class="icon">
+                                  <i class="icon-upload-cloud"></i>
+                                </div>
+                                <div class="text-tiny">Drop your images here or select <span class="tf-color">click to browse</span></div>
+                                <input type="file" id="myFile" name="filename">
+                              </label>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </form> -->
+                              <!-- /new-page-wrap -->
+                            </div>
+                            <!-- /main-content-wrap -->
+                          </div>
+                          <!-- /main-content-wrap -->
 
 
-
-
-
-                  <!-- /form-add-product -->
+                          <!-- bottom-page -->
+                          <div class="bottom-page">
+                            <div class="body-text">Copyright © 2024 Omega. Design with</div>
+                            <i class="icon-heart"></i>
+                            <div class="body-text">
+                              by
+                              <a href="#">Omega Group</a>
+                              All rights reserved.
+                            </div>
+                          </div>
+                          <!-- /bottom-page -->
+                        </div>
+                        <!-- /main-content -->
+                      </div>
+                      <!-- /section-content-right -->
+                    </div>
+                    <!-- /layout-wrap -->
                 </div>
-                <!-- /main-content-wrap -->
+                <!-- /#page -->
               </div>
-              <!-- /main-content-wrap -->
-              <!-- bottom-page -->
-              <div class="bottom-page">
-                <div class="body-text">Copyright © 2024 Omega. Design with</div>
-                <i class="icon-heart"></i>
-                <div class="body-text">
-                  by
-                  <a href="#">Omega Group</a>
-                  All rights reserved.
-                </div>
-              </div>
-              <!-- /bottom-page -->
-            </div>
-            <!-- /main-content -->
-          </div>
-          <!-- /section-content-right -->
-        </div>
-        <!-- /layout-wrap -->
-      </div>
-      <!-- /#page -->
-    </div>
-    <!-- /#wrapper -->
+              <!-- /#wrapper -->
 
-    <!-- Javascript -->
-    <script>
-      function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
+              <!-- Javascript -->
+              <script src="js/jquery.min.js"></script>
+              <script src="js/bootstrap.min.js"></script>
+              <script src="js/bootstrap-select.min.js"></script>
+              <script src="js/zoom.js"></script>
+              <script src="js/tinymce/tinymce.min.js"></script>
+              <script src="js/tinymce/tinymce-custom.js"></script>
+              <script src="js/switcher.js"></script>
+              <script src="js/theme-settings.js"></script>
+              <script src="js/main.js"></script>
 
-        // Ẩn tất cả các tab content
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-
-        // Hiển thị tab content hiện tại
-        document.getElementById(tabName).style.display = "block";
-      }
-
-      function activateButton(button) {
-        // Lấy tất cả các nút
-        var buttons = document.getElementsByClassName('toggle-button');
-
-        // Loại bỏ lớp 'active' từ tất cả các nút
-        for (var i = 0; i < buttons.length; i++) {
-          buttons[i].classList.remove('active');
-        }
-
-        // Thêm lớp 'active' vào nút hiện tại
-        button.classList.add('active');
-      }
-
-      // Hiển thị tab mặc định
-      document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("description").style.display = "block";
-        document.querySelector('.description-button').classList.add('active');
-      });
-    </script>
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/zoom.js"></script>
-    <script src="js/switcher.js"></script>
-    <script src="js/theme-settings.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://kit.fontawesome.com/ffa90392e4.js" crossorigin="anonymous"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/slick/slick.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/slideshow.js"></script>
   </body>
 
 </html>
