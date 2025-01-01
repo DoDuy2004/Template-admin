@@ -1213,21 +1213,19 @@ a:focus {
   width: 216px;
 }
 
-/* Start ALL CSS-Edit-4 */
 .wg-box {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding: 15px;
+  padding: 24px;
   flex-direction: column;
   gap: 24px;
   border-radius: 12px;
   background: var(--White);
   box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
 }
-/* End ALL CSS-Edit-4 */
 
 .title-box {
   display: -webkit-box;
@@ -1464,16 +1462,6 @@ a:focus {
   font-weight: 500;
 }
 
-/* Start info-website Edit CSS-8 */
-.widget-content-inner {
-  margin: 0px 80px;
-}
-.widget-content-inner .number {
-  color: var(--Body-Text);
-}
-/* End info-website Edit CSS-8 */
-
-/* Start order-list,edit-page,info-website, Edit CSS-3 */
 .block-pending {
   display: -webkit-box;
   display: -moz-box;
@@ -1484,51 +1472,14 @@ a:focus {
   justify-content: center;
   width: max-content;
   height: 24px;
-  padding: 15px 15px;
+  padding: 2px 8px;
   gap: 10px;
   border-radius: 4px;
   background: #f8fafc;
-  color: #ffffff;
+  color: #95989d;
   font-size: 12px;
   font-weight: 500;
 }
-.block-response {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  height: 24px;
-  padding: 15px 40px;
-  gap: 10px;
-  border-radius: 4px;
-  background: #f8fafc;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 500;
-}
-.block-update {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  height: 24px;
-  padding: 20px 60px;
-  gap: 10px;
-  border-radius: 4px;
-  background: #f8fafc;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 500;
-}
-/* End order-list,edit-page,info-website, Edit CSS-3 */
 
 .block-tracking {
   display: -webkit-box;
@@ -1951,7 +1902,6 @@ a:focus {
   max-width: 458px;
 }
 
-/* Start order-list,edit-page,info-website Edit css-1 */
 .list-icon-function {
   display: -webkit-box;
   display: -moz-box;
@@ -1959,40 +1909,9 @@ a:focus {
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
+  gap: 20px;
 }
-
-.box-response {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-top: 30px;
-}
-.box-update-info {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.box-update-info .block-update {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-top: 30px;
-}
-/* End order-list,edit-page,info-website css-1 */
-
 .list-icon-function .item {
   font-size: 20px;
   cursor: pointer;
@@ -3989,7 +3908,6 @@ select.h40 {
   color: var(--Main);
 }
 
-/* Start ALL CSS-Edit-5 */
 .widget-tabs .widget-menu-tab {
   display: -webkit-box;
   display: -moz-box;
@@ -3998,11 +3916,9 @@ select.h40 {
   display: flex;
   gap: 26px;
   padding-bottom: 14px;
-
+  border-bottom: 1px solid #edf1f5;
   margin-bottom: 24px;
 }
-/* End ALL CSS-Edit-5 */
-
 .widget-tabs .widget-menu-tab li {
   cursor: pointer;
   position: relative;
@@ -4846,360 +4762,9 @@ select.h40 {
 .wg-table.table-product-list .product-item:nth-child(2n + 1) {
   background: var(--bg-table);
 }
-/*Start order-list CSS-Edit-6 */
 .wg-table.table-all-category > * {
-  min-width: 1005px;
+  min-width: 1515px;
 }
-/*End order-list CSS-Edit-6 */
-/*Start Edit-product CSS-Edit-9  */
-.inputContent {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: all 0.3s ease;
-}
-.inputContent:focus {
-  white-space: normal;
-  overflow: visible;
-  text-overflow: inherit;
-}
-
-.file-input {
-  display: none; /* Ẩn input file */
-}
-.choose-button {
-  display: inline-block;
-  padding: 11px 20px;
-  background: #fff;
-  color: rgb(72, 219, 251);
-  border: solid 1px rgb(72, 219, 251);
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-}
-.remove-button {
-  display: inline-block;
-  padding: 11px 20px;
-  background: rgb(255, 107, 107);
-  color: #fff;
-  border: solid 1px rgb(255, 107, 107);
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.choose-button:hover {
-  background: rgb(72, 219, 251);
-  color: #fff;
-}
-.remove-button:hover {
-  background: #fff;
-  color: rgb(255, 107, 107);
-}
-.wg-box .sidebar-image-editor {
-  display: flex;
-  justify-content: space-between;
-}
-
-.box-uploadImage-avatar {
-  width: 35%;
-  margin-right: 15px;
-}
-
-.box-uploadImage .selectButton {
-  display: flex;
-  justify-content: space-between;
-}
-
-.box-uploadImage .Add-Image button {
-  color: #fff;
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  display: inline-block;
-  border: solid 1px rgb(29, 209, 161);
-  border-radius: 0px;
-  background-color: rgb(29, 209, 161);
-}
-.Add-Image button:hover {
-  background-color: #fff;
-  color: rgb(29, 209, 161);
-}
-
-.box-uploadImage-avatar .Add-Image-Avatar button {
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  display: inline-block;
-  background: #fff;
-  color: rgb(72, 219, 251);
-  border: solid 1px rgb(72, 219, 251);
-  border-radius: 0px;
-}
-.box-uploadImage-avatar .Add-Image-Avatar button:hover {
-  background-color: rgb(72, 219, 251);
-  color: #fff;
-}
-.wg-box .image-list-product .box-image-item {
-  cursor: pointer;
-}
-.wg-box .image-list-product {
-  margin: auto;
-  position: relative;
-  display: flex;
-}
-.wg-box .image-list-product .product-image-item {
-  height: 100px;
-  width: 100%;
-}
-
-.chevron-item {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.chevron-left,
-.chevron-right {
-  position: absolute;
-  transform: translate(0, -70px);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 10;
-}
-.chevron-item .chevron-right {
-  right: 0;
-}
-
-.chevron-left:hover,
-.chevron-right:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.wg-box .add-product-button {
-  background-color: rgb(0, 210, 211);
-  color: #fff;
-  border-radius: 0px;
-  border: solid 1px rgb(0, 210, 211);
-  font-weight: 700;
-  font-size: 20px;
-}
-.wg-box .add-product-button:hover {
-  background-color: #fff;
-  color: rgb(0, 210, 211);
-}
-
-.main-content-wrap .back-list {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 20px;
-}
-.main-content-wrap .back-list i {
-  font-weight: 700;
-  margin-right: 5px;
-}
-.main-content-wrap .back-list a {
-  background-color: #fff;
-  padding: 15px 5px;
-  color: rgb(29, 209, 161, 100%);
-  border: 1px solid rgb(29, 209, 161, 100%);
-  border-radius: 10px;
-  font-size: 16px;
-}
-.main-content-wrap .back-list a:hover {
-  color: #fff;
-  background-color: rgb(29, 209, 161);
-}
-
-/*End  Edit-product CSS-Edit-9  */
-
-/*Start product-detail CSS-Edit-10 */
-.detail-product-section {
-  margin-left: 60px;
-  display: flex;
-}
-.detail-product-section .box-detail {
-  position: relative;
-  border-right: solid 1px black;
-  padding-right: 40px;
-  width: 40%;
-}
-.detail-product-section .image-list-product div img {
-  padding: 0px 5px;
-}
-
-.box-info-product {
-  margin: 30px 0px 0px 20px;
-  width: 100%;
-}
-.box-info-product .info-product {
-  margin-top: 20px;
-  font-size: 16px;
-  color: black;
-}
-.box-info-product .info-product .bottom-info-product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.product-code,
-.product-category,
-.product-stock,
-.product-supplier,
-.product-brand,
-.product-slug,
-.sales-count,
-.product-price-detail,
-.another-metric,
-.some-metric,
-.product-status {
-  margin: 40px 0px 10px 0px;
-}
-.some-metric i,
-.another-metric i {
-  margin-right: 5px;
-}
-
-.text-danger,
-.another-metric i {
-  color: red;
-}
-
-.original-price {
-  text-decoration: line-through;
-  color: grey;
-}
-.wg-box .back-list {
-  position: absolute;
-  display: flex;
-  right: 10px;
-}
-.wg-box .back-list i {
-  font-weight: 700;
-  margin-right: 5px;
-}
-.wg-box .back-list a {
-  background-color: #fff;
-  padding: 15px 5px;
-  color: rgb(29, 209, 161, 100%);
-  border: 1px solid rgb(29, 209, 161, 100%);
-  border-radius: 10px;
-  font-size: 16px;
-}
-.wg-box .back-list a:hover {
-  color: #fff;
-  background-color: rgb(29, 209, 161);
-}
-.status-active {
-  color: #fff;
-  background-color: rgb(29, 209, 161);
-  padding: 5px 5px;
-  border-radius: 50px;
-}
-.menu-button {
-  display: flex;
-  margin-top: 10px;
-}
-.menu-button .toggle-button {
-  color: #fff;
-  background-color: rgb(0, 210, 211);
-  width: 100%;
-}
-
-.menu-button .description-button,
-.menu-button .rate-button {
-  font-size: 20px;
-  font-weight: 700;
-  padding: 15px 0px;
-}
-.product-image-item:hover {
-  border: solid 1px rgb(3, 168, 168);
-}
-
-.toggle-button .active {
-  background-color: rgb(3, 168, 168);
-}
-.toggle-button:not(.active) {
-  background-color: rgb(3, 168, 168);
-}
-.tabcontent {
-  display: none;
-}
-.tabcontent .active {
-  display: block;
-}
-.wg-box .box-comment {
-  max-height: 400px;
-  overflow-y: auto;
-}
-.comment-section {
-  margin-top: 20px;
-}
-.comment-section .filter-newest-comments {
-  position: relative;
-  width: 15%;
-  margin-left: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.comment {
-  border-bottom: 1px solid #ccc;
-  margin: 15px 250px 0px 80px;
-  padding: 0px 0px 15px 0px;
-  font-size: 16px;
-}
-
-.comment-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.comment-author {
-  font-weight: bold;
-  color: #000000;
-}
-
-.comment-date {
-  color: #888;
-}
-
-.comment-delete {
-  margin-left: auto;
-}
-
-.delete-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: red;
-  font-size: 25px;
-}
-
-.comment-body {
-  margin-top: 10px;
-}
-
-.comment-text {
-  margin-bottom: 10px;
-  color: #000000;
-}
-
-.comment-rating .star {
-  color: gold;
-  font-size: 20px;
-}
-
-/*End product-detail CSS-Edit-10 */
 .wg-table.table-all-category ul.table-title {
   padding: 12px;
   border-radius: 12px;
@@ -6018,55 +5583,6 @@ select.h40 {
 .dark-theme .block-not-available {
   background: #432f25;
 }
-/* Start info-website Edit CSS-2 */
-.list-icon-function .block-pending {
-  background: rgb(29, 209, 161);
-  border-radius: 20px;
-}
-.box-response .block-response {
-  background: rgb(29, 209, 161);
-  border-radius: 5px;
-  border: solid 1px rgb(29, 209, 161);
-  cursor: pointer;
-}
-.box-response .block-response:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(29, 209, 161);
-}
-.box-update-info .block-update {
-  background: rgb(72, 219, 251);
-  border-radius: 15px;
-  border: solid 1px rgb(72, 219, 251);
-  cursor: pointer;
-}
-.box-update-info .block-update:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(72, 219, 251);
-}
-.widget-content-inner .choose-logo {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  color: black;
-}
-.widget-content-inner .choose-logo .choose-logo-button {
-  display: inline-block;
-  padding: 11px;
-  border-radius: 10px;
-  background: rgb(217, 217, 217);
-  border: solid 1px rgb(217, 217, 217);
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  margin-left: 10px;
-}
-/* End info-website Edit CSS-2 */
-/* Start order-list Edit CSS-4 */
-.list-icon-function .block-tracking {
-  background: rgb(72, 219, 251);
-  border-radius: 20px;
-}
-/* End order-list Edit CSS-4 */
 .dark-theme .block-pending {
   background: rgba(149, 152, 157, 0.4117647059);
 }
