@@ -49,17 +49,16 @@
                     </a>
                     <div class="login-box">
                         <div>
-                            <h3>Login to account</h3>
-                            <div class="body-text">Enter your email & password to login</div>
+                            <h3>Đăng nhập</h3>
                         </div>
                         <form class="form-login flex flex-column gap24">
                             <fieldset class="email">
-                                <div class="body-title mb-10">Email address <span class="tf-color-1">*</span></div>
-                                <input class="flex-grow" type="email" placeholder="Enter your email address" name="email" tabindex="0" value="" aria-required="true" required="">
+                                <div class="body-title mb-10">Email hoặc username <span class="tf-color-1">*</span></div>
+                                <input class="flex-grow" type="email" placeholder="Vui lòng nhập tên tài khoản" name="email" tabindex="0" value="" aria-required="true" required="">
                             </fieldset>
                             <fieldset class="password">
                                 <div class="body-title mb-10">Password <span class="tf-color-1">*</span></div>
-                                <input class="password-input" type="password" placeholder="Enter your password" name="password" tabindex="0" value="" aria-required="true" required="">
+                                <input class="password-input" type="password" placeholder="Vui lòng nhập mật khẩu" name="password" tabindex="0" value="" aria-required="true" required="">
                                 <span class="show-pass">
                                     <i class="icon-eye view"></i>
                                     <i class="icon-eye-off hide"></i>
@@ -68,14 +67,17 @@
                             <div class="flex justify-between items-center">
                                 <div class="flex gap10">
                                     <input class="" type="checkbox" id="signed">
-                                    <label class="body-text" for="signed">Keep me signed in</label>
-                                </div>
-                                <a href="#" class="body-text tf-color">Forgot password?</a>
+                                    <label class="body-text" for="signed">Ghi nhớ thiết bị này</label>
+                                </div>                                
                             </div>
-                            <a href="index.html" class="tf-button w-full">Login</a>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="body-text tf-color">Quên mật khẩu</a>                               
+                                <a href="#" class="body-text tf-color">Tạo tài khoản</a>
+                            </div>
+                            <button class="tf-button w-full fw-bold" style="background-color: #00d2d3; color: #000;" type="submit">Đăng nhập</button>
                         </form>
                         <div>
-                            <div class="text-tiny mb-16 text-center">Or continue with social account</div>
+                            <div class="text-tiny flex justify-between align-items-center mb-16 text-center"><p class="w-25" style="border-bottom: 1px solid #a7a7a7;"></p>Hoặc đăng nhập với<p class="w-25" style="border-bottom: 1px solid #a7a7a7;"></div>
                             <div class="flex gap16 mobile-wrap">
                                 <a href="index.html" class="tf-button style-2 w-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
@@ -93,28 +95,10 @@
                                         </clipPath>
                                         </defs>
                                     </svg>
-                                    <span class="tf-color-3">Sign in with Google</span>
-                                </a>
-                                <a href="index.html" class="tf-button style-2 w-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                                        <g clip-path="url(#clip0_604_20003)">
-                                        <path d="M22.5 11C22.5 16.4905 18.4773 21.0414 13.2188 21.8664V14.1797H15.7818L16.2695 11H13.2188V8.93664C13.2188 8.06652 13.645 7.21875 15.0114 7.21875H16.3984V4.51172C16.3984 4.51172 15.1395 4.29688 13.9359 4.29688C11.4235 4.29688 9.78125 5.81969 9.78125 8.57656V11H6.98828V14.1797H9.78125V21.8664C4.52273 21.0414 0.5 16.4905 0.5 11C0.5 4.92508 5.42508 0 11.5 0C17.5749 0 22.5 4.92508 22.5 11Z" fill="#1877F2"/>
-                                        <path d="M15.7818 14.1797L16.2695 11H13.2188V8.9366C13.2188 8.0667 13.6449 7.21875 15.0114 7.21875H16.3984V4.51172C16.3984 4.51172 15.1396 4.29688 13.9361 4.29688C11.4235 4.29688 9.78125 5.81969 9.78125 8.57656V11H6.98828V14.1797H9.78125V21.8663C10.3413 21.9542 10.9153 22 11.5 22C12.0847 22 12.6587 21.9542 13.2188 21.8663V14.1797H15.7818Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_604_20003">
-                                        <rect width="22" height="22" fill="white" transform="translate(0.5)"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>
-                                    <span class="tf-color-3">Sign in with Facebook</span>
-                                </a>
+                                    <span class="tf-color-3">Google</span>
+                                </a>                                
                             </div>
-                        </div>
-                        <div class="body-text text-center">
-                            You don't have an account yet?
-                            <a href="sign-up.html" class="body-text tf-color">Register Now</a>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
                 <div class="text-tiny">Copyright © 2024 Remos, All rights reserved.</div>
