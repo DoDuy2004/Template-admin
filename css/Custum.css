@@ -73,3 +73,27 @@
     flex-shrink: 0;
   }
 /* Danh sách đơn hàng */
+
+/* Danh sách sản phẩm */
+.wg-table.table-product-list > * {
+  min-width: 1200px;
+}
+.product-item .name a {
+  line-height: 17px;
+  display: block; /* Đặt thẻ a thành block */
+  overflow: hidden; /* Ẩn nội dung vượt ra ngoài */
+  text-overflow: ellipsis; /* Hiện thị dấu ba chấm */
+  white-space: nowrap; /* Không cho xuống dòng */
+}
+.wg-table.table-product-list ul.table-title li {
+  width: 10%;
+}
+.wg-table.table-product-list .product-item > .flex > div {
+  width: 10%;
+}
+.wg-table.table-product-list ul.table-title li:nth-child(5){
+  width: 100px;
+  flex-shrink: 0;
+}
+
+/* Danh sách sản phẩm */
