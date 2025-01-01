@@ -1,0 +1,75 @@
+/* Danh sách đơn hàng */
+.input-button-container {
+    display: flex; /* Sử dụng flexbox để bố trí các phần tử ngang */
+    border-radius: 8px; /* Bo góc cho cả container */
+    overflow: hidden; /* Ẩn các phần thừa ra ngoài */
+    width: 200px; /* Chiều rộng container */
+  }
+  
+  .btn-custom {
+    background-color: #007bff; /* Nền xanh dương */
+    color: white; /* Chữ màu trắng */
+    border: none; /* Không viền */
+    padding: 10px 20px; /* Khoảng cách trong button */
+    cursor: pointer; /* Con trỏ chuột khi hover vào */
+    border-radius: 8px 0 0 8px; /* Bo góc chỉ cho phần trên bên trái */
+  }
+  
+  .input-custom {
+    border: 2px solid #007bff; /* Viền màu xanh dương */
+    padding: 5px; /* Khoảng cách trong input */
+    width: 50%; /* Chiếm toàn bộ chiều rộng còn lại */
+    border-radius: 0 8px 8px 0; /* Bo góc chỉ cho phần trên bên phải */
+    color: black; /* Chữ màu đen */
+    font-size: 16px; /* Kích thước chữ */
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3;
+  }
+  
+  .input-custom:focus {
+    outline: none; /* Bỏ outline mặc định */
+    border-color: #0056b3; /* Đổi màu viền khi focus */
+  }
+  .order-state{
+    width: 40%
+  }
+  @media (max-width: 1400px) {
+    .order-state{
+      width: 60%
+    }
+  }
+  @media (max-width: 768px) {
+    .order-state{
+      width: 80%
+    }
+  }
+  @media (max-width: 576px) {
+    .order-state{
+      width: 100%
+    }
+  }
+  .wg-table.table-all-category ul.order-title-custum li:first-child {
+    width: 150px;
+    flex-shrink: 0;
+  }
+  .wg-table.table-all-category ul.order-title-custum li:nth-child(4) {
+    width: 200%;
+  }
+  .wg-table.table-all-category ul.order-title-custum li:last-child {
+    width: 600px;
+    flex-shrink: 0;
+  }
+  .wg-table.table-all-category .product-item > .flex > div:first-child {
+    width: 150px;
+    flex-shrink: 0;
+  }
+  .wg-table.table-all-category .product-item > .flex > div:nth-child(4){
+    width: 200%;
+  }
+  .wg-table.table-all-category .product-item > .flex > div:last-child {
+    width: 600px;
+    flex-shrink: 0;
+  }
+/* Danh sách đơn hàng */
