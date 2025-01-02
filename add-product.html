@@ -795,21 +795,17 @@
                         <div class="sidebar-image-editor w-100">
 
                           <div class="box-uploadImage mb-16 w-50">
-                            <div class="item-image-avatar  normal-slider">
-                              <img src="" alt="Product Image" style="min-width: 371px;min-height: 371px;border: #48dbfb 2px solid;">
-                              <img src="images/rua.jpg" alt="Product Image">
-                              <img src="images/mabu.jpg" alt="Product Image">
-                              <img src="images/ruaxanh.webp" alt="Product Image">
-                              <img src="images/thap.jpg" alt="Product Image">
+                            <div class="item-image-avatar  normal-slider avatar-box">
+                              <div class="empty-avatar" id="avatar">Hình Ảnh</div>
                             </div>
+
                             <div class="selectButton">
                               <div class="chooseImage w-50">
                                 <input type="file" id="fileInput" class="file-input">
                                 <label for="fileInput" class="choose-button w-100">Chọn ảnh</label>
                               </div>
                               <div class="removeImage w-50">
-                                <input type="file" id="fileInput" class="file-input">
-                                <label for="fileInput" class="remove-button w-100">Bỏ chọn</label>
+                                <button class="remove-button w-100">Bỏ chọn</button>
                               </div>
                             </div>
                             <div class="Add-Image">
@@ -818,7 +814,7 @@
                           </div>
 
                           <div class="box-uploadImage-avatar mb-16">
-                            <div class="item-image" style="min-width: 259.52px;min-height: 275.78px;border: 2px #48dbfb solid;">
+                            <div class="item-image">
                               <img src="" class="w-100">
                             </div>
                             <div class="Add-Image-Avatar">
@@ -838,18 +834,28 @@
                           </div> -->
                         </div>
                         <div class="box-detail">
-                          <div>
-                            <div class="image-list-product product-slider-single-edit mt-3">
-                              <div class="box-image-item mt-2 slider-nav-img "><img src="images/luffy.png" alt="Product Image" class=" product-image-item  "></div>
-                              <div class="box-image-item mt-2 slider-nav-img "><img src="images/rua.jpg" alt="Product Image" class=" product-image-item  "></div>
-                              <div class="box-image-item mt-2 slider-nav-img "><img src="images/mabu.jpg" alt="Product Image" class=" product-image-item  "></div>
-                              <div class="box-image-item mt-2 slider-nav-img "><img src="images/ruaxanh.webp" alt="Product Image" class=" product-image-item  "></div>
-                              <div class="box-image-item mt-2 slider-nav-img "><img src="images/thap.jpg" alt="Product Image" class=" product-image-item  "></div>
+                          <div class="box-slideshow-image">
+                            <div class="title-list-image">
+                              <span>Danh sách hình ảnh của sản phẩm: </span>
                             </div>
-                            <div class="chevron-item">
-                              <span class="chevron-left"><i class=" fa-solid fa-chevron-left"></i></span>
-                              <span class="chevron-right"><i class=" fa-solid fa-chevron-right"></i></span>
+                            <div class="image-list-product product-slider-single-edit mt-3 slideshow" id="slideshow">
+                              <!-- <div class="box-image-item mt-2 slider-nav-img"><img src="images/luffy.png" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/rua.jpg" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/mabu.jpg" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/ruaxanh.webp" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/thap.jpg" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/placeholder.png" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/pokemon.jpg" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/frog.jpg" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/pika.png" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div>
+                              <div class="box-image-item mt-2 slider-nav-img"><img src="images/waterpoke.jpg" alt="Product Image" class="product-image-item" onclick="updateAvatar(this.src)"></div> -->
+
                             </div>
+
+                            <!-- <div class="chevron-item">
+                              <span class="chevron-left"><i class="fa-solid fa-chevron-left"></i></span>
+                              <span class="chevron-right"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div> -->
                           </div>
                         </div>
                         <!-- <div class="body-text">You need to add at least 4 images. Pay attention to the quality of the pictures you add, comply with the background color standards. Pictures must be in certain dimensions. Notice that the product shows all the details</div> -->

@@ -130,26 +130,34 @@
 
   //product edit
 
-  $(".item-image-avatar").slick({
-    infinite: true,
-    autoplay: false,
-    dots: false,
-    fade: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: ".product-slider-single-edit",
-  });
+  // $(".item-image-avatar").slick({
+  //   infinite: true,
+  //   autoplay: false,
+  //   dots: false,
+  //   fade: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   asNavFor: ".product-slider-single-edit",
+  // });
 
-  $(".product-slider-single-edit").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: $(".chevron-left"),
-    nextArrow: $(".chevron-right"),
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    asNavFor: ".item-image-avatar",
-  });
+  // $(".product-slider-single-edit").slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   prevArrow: $(".chevron-left"),
+  //   nextArrow: $(".chevron-right"),
+  //   dots: false,
+  //   centerMode: true,
+  //   focusOnSelect: true,
+  //   asNavFor: ".item-image-avatar",
+  // });
+
+  // function updateAvatar(src) {
+  //   const avatar = document.getElementById("avatar");
+  //   avatar.style.backgroundImage = `url(${src})`;
+  //   avatar.style.backgroundSize = "cover";
+  //   avatar.style.backgroundPosition = "center";
+  //   avatar.classList.remove("empty-avatar");
+  // }
 
   // Brand Slider
   $(".brand-slider").slick({
@@ -253,3 +261,11 @@
     }
   });
 })(jQuery);
+
+function updateAvatar(src) {
+  const avatar = document.getElementById("avatar");
+  avatar.style.backgroundImage = `url(${src})`;
+  avatar.style.backgroundSize = "cover";
+  avatar.style.backgroundPosition = "center";
+  avatar.classList.remove("empty-avatar");
+}
