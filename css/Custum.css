@@ -164,3 +164,14 @@
 }
 
 /* Danh sách sản phẩm */
+
+/* Danh sách Vai trò */
+.wg-table.table-all-roles ul.table-title li:last-child {
+  width: 800px;
+  flex-shrink: 0;
+}
+.wg-table.table-all-roles .roles-item > div:last-child {
+  width: 800px;
+  flex-shrink: 0;
+}
+/* Danh sách Vai trò */
