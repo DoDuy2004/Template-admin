@@ -705,22 +705,55 @@
                     </ul>
                   </div>
                   <!-- new-category -->
-                  <div class="wg-box" style="width: 30%">
-                    <form>
-                      <div class="form-group">
-                        <label
-                          for="exampleInputEmail1"
-                          class="mb-10 fs-5 fw-bold"
-                          >Tên danh mục</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control mb-10"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                          placeholder=""
-                          value="đồ chơi mô hình"
-                        />
+                  <div class="wg-box col-lg-12">
+                    <form class="col-md-12">
+                      <div class="row mb-10">
+                        <div class="col-md-6">
+                          <label
+                            for="exampleInputEmail1"
+                            class="mb-10 fs-5 fw-bold"
+                            >Danh mục cha</label
+                          >
+                          <select name="parent-category" id="parent-category">
+                            <option value="">--Chọn danh mục--</option>
+                            <option value="">Đồ gỗ 3D</option>
+                            <option value="">Mô hình annime</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                          <label
+                            for="exampleInputEmail1"
+                            class="mb-10 fs-5 fw-bold"
+                            >Tên danh mục</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control mb-10"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            value="Duy Dep Trai"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label
+                            for="exampleInputEmail1"
+                            class="mb-10 fs-5 fw-bold"
+                            >Slug</label
+                          >
+                          <input
+                            style="background-color: #d9d9d9"
+                            type="email"
+                            class="form-control mb-10 text-dark"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Slug"
+                            value="duy-dep-trai"
+                            disabled
+                          />
+                        </div>
                       </div>
                       <div class="form-group">
                         <label
@@ -732,9 +765,7 @@
                           class="form-control"
                           id="exampleFormControlTextarea1"
                           rows="3"
-                        >
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae molestias possimus nemo illum aperiam harum dignissimos incidunt saepe suscipit, ipsum porro! Natus odit reprehenderit dolore a. Eius tenetur aliquid sit.</textarea
-                        >
+                        ></textarea>
                       </div>
                       <div class="bot mt-5 w-100">
                         <button
